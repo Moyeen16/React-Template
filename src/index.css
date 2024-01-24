@@ -12,6 +12,36 @@ code {
 		monospace;
 }
 
+/* Default font size */
+:root {
+	--base-font-size: 14px;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+	:root {
+	  --base-font-size: 14px;
+	}
+  }
+  
+  /* Media query for medium screens */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+	:root {
+	  --base-font-size: 13px;
+	}
+  }
+  
+  /* Media query for large screens */
+  @media screen and (min-width: 1025px) {
+	:root {
+	  --base-font-size: 12px;
+	}
+  }
+  
+  /* Apply the font size to the body or any desired element */
+  body {
+	font-size: var(--base-font-size);
+  }
 /* styles/tailwind.css */
 @import "tailwindcss/base";
 @import "tailwindcss/components";

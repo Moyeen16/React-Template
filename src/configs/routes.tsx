@@ -10,6 +10,11 @@ const routesConfig: IRouteConfig[] = [
 		children: [],
 	},
 	{
+		path: "/components",
+		element: <Pages.ComponentsPage />,
+		children: [],
+	},
+	{
 		path: "parent",
 		element: <Pages.ParentPage />,
 		children: [

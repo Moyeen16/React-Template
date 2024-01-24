@@ -1,5 +1,8 @@
+import { IMenuItemsProps } from "./IMenuItemsProps";
+
 export interface IMenuItems {
 	label: string;
-	menuItems: IMenuItems[];
+	menuItems: IMenuItemsProps[];
 	onClick?: () => void;
+	handleClick: (label: string) => void;
 }
